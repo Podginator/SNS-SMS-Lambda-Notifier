@@ -1,0 +1,25 @@
+{
+  "name": "moneyyou",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "npm pack && tarball=$(ls *.tgz| head -1); tar -tf $tarball | sed -e \"s/^package\\///\" | zip -@r handler.zip; rm $tarball"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.344.0",
+    "uuid": "^3.3.2",
+    "lodash": "^4.17.11"
+  },
+  "bundleDependencies": [
+    "lodash",
+    "uuid",
+    "aws-sdk"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "/lib",
+    "./node_modules"
+  ]
+}
