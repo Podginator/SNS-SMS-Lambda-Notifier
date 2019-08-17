@@ -11,4 +11,9 @@ resource "aws_s3_bucket_object" "lambda_object" {
   bucket  = "${aws_s3_bucket.lambda_bucket.id}"
   key     = "handler.zip"
   source = "../handler.zip"
+
+  # Metadata to ensure reuploads. Hacky. Would use CI.
+  metadata = {
+    time = "${timestamp()}"
+  }
 }
