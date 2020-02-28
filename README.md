@@ -1,4 +1,3 @@
-# Moneyou Assignment
 
 ## Design
 
