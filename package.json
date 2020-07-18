@@ -9,7 +9,7 @@
   "dependencies": {
     "aws-sdk": "^2.344.0",
     "uuid": "^3.3.2",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   },
   "bundleDependencies": [
     "lodash",
