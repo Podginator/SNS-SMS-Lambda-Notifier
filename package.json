@@ -7,7 +7,7 @@
     "build": "npm pack && tarball=$(ls *.tgz| head -1); tar -tf $tarball | sed -e \"s/^package\\///\" | zip -@r handler.zip; rm $tarball"
   },
   "dependencies": {
-    "aws-sdk": "^2.344.0",
+    "aws-sdk": "^2.814.0",
     "uuid": "^3.3.2",
     "lodash": "^4.17.21"
   },
